@@ -8,4 +8,3 @@ class Cell:
         self.type_next = 0
     def check_cell(self):
         self.rotate = random.randrange(0, 7)
-
