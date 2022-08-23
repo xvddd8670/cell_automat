@@ -32,7 +32,6 @@ while i_in_while < size_x:
     del(cells_y)
     i_in_while += 1
 
-cells_list[0][3].check_cell(cells_list)
 #main while 
 clock = pygame.time.Clock()
 running = True
