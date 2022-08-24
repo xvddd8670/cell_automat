@@ -17,10 +17,12 @@ class Cell:
         self.dna = [0, #type food 
                     0, #priority food/reproduction/energy_transfer/energy_intake/migration
                     4, #count energy transfer for reproduction 
+                    2, #migration chance
+                    False, #cannibalism
+                    False, #vampirism
+                    0, #energy vampirism count
+                    False, #energy transfer
                     0, #count energy transfer
-                    0, #energy intake
-                    2, #migration
-                    0, #cannibalism
                     1] #mutation chance
         #####
         self.type = 0
@@ -52,3 +54,23 @@ class Cell:
     ##
     def render(self, screen):
         pygame.draw.rect(screen, self.active_color, pygame.Rect(self.position_x*6, self.position_y*6, 5, 5), 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
